@@ -5,18 +5,24 @@
   "scripts": {
     "start": "node ./bin/www",
     "test": "./node_modules/.bin/mocha --reporter spec",
-    "debug": "DEBUG=guardanota:* npm star"
+    "debug": "DEBUG=guardanota:* npm star",
+    "lint": "eslint ."
   },
   "dependencies": {
     "body-parser": "~1.17.1",
-    "chai": "^4.1.2",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.3",
-    "express": "~4.15.2",
     "jade": "~1.11.0",
-    "mocha": "^3.5.3",
     "morgan": "~1.8.1",
-    "request": "^2.82.0",
     "serve-favicon": "~2.4.2"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.3.0",
+    "mocha": "^3.5.3",
+    "chai": "^4.1.2",
+    "request": "^2.82.0",
+    "express": "~4.15.2"
   }
 }
